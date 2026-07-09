@@ -1,0 +1,370 @@
+.gd-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.gd-loading {
+    text-align: center;
+    margin-top: 60px;
+    color: #666;
+}
+
+.gd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gd-group-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.gd-group-desc {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.gd-members-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.member-badge {
+    background: #004f9f;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.gd-header-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Tabs */
+.gd-tabs {
+    display: flex;
+    gap: 5px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 25px;
+}
+
+.gd-tab {
+    background: none;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    color: #555;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.gd-tab:hover {
+    color: #004f9f;
+}
+
+.gd-tab-active {
+    color: #004f9f;
+    font-weight: bold;
+    border-bottom: 3px solid #004f9f;
+}
+
+.gd-tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gd-empty {
+    text-align: center;
+    color: #888;
+    margin-top: 30px;
+}
+
+.gd-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+/* Transaction cards */
+.txn-card {
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+}
+
+.txn-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.txn-desc {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.txn-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #004f9f;
+}
+
+.txn-paidby {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.txn-splits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.split-item {
+    background: #e0ecff;
+    color: #004f9f;
+    font-size: 12px;
+    padding: 3px 9px;
+    border-radius: 20px;
+}
+
+.txn-date {
+    font-size: 11px;
+    color: #aaa;
+}
+
+/* Balance cards */
+.balance-card {
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.balance-name {
+    font-weight: bold;
+    font-size: 14px;
+    flex: 1;
+}
+
+.balance-amount {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.balance-amount.positive {
+    color: #28a745;
+}
+
+.balance-amount.negative {
+    color: #dc3545;
+}
+
+.balance-label {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Settle cards */
+.settle-card {
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.settle-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.settle-amt {
+    color: #004f9f;
+    font-weight: bold;
+}
+
+.settle-manual {
+    margin-top: 5px;
+}
+
+.settle-manual-text {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.settle-manual-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* History cards */
+.history-card {
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+}
+
+.history-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.history-amt {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.history-note {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.history-date {
+    font-size: 11px;
+    color: #aaa;
+}
+
+/* Search */
+.search-row {
+    display: flex;
+    gap: 10px;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Shared buttons (also in Home.css — repeat here for standalone use) */
+.btn-primary {
+    background-color: #004f9f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #003d7a;
+}
+
+.btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.modal-input {
+    padding: 11px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    width: 100%;
+}
+
+.modal-input:focus {
+    border-color: #004f9f;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 5px;
+}
